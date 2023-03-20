@@ -6,8 +6,11 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Run tests](#run-tests)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Testing](#testing)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
@@ -66,19 +69,57 @@
 
 To get a local copy up and running, follow these steps.
 
+### Prerequisites
+
+In order to run this project you need to run:
+
+```sh
+ node version 16 or higher
+```
+
 ### Setup
 
-Clone this repository to your desired folder using the following command; git clone https://github.com/Amen-Musingarimi/Math-Magicians
+Clone this repository to your desired folder:
 
-### Run tests
+```sh
+  cd Math-Magicians
+  git clone https://github.com/Amen-Musingarimi/Math-Magicians
+```
 
-To run tests, run the following command: npx stylelint "\*_/_.{css,scss}" and npx eslint "\*_/_.{js,jsx}"
+### Install
+
+Install this project with:
+
+```sh
+  cd Math-Magicians
+  npm install
+
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```
+  npm start
+```
+
+### Testing
+
+To run the project, execute the following command:
+
+```
+  npm run test
+```
 
 ### Deployment
 
-You can deploy this project using Netlify.
+You can deploy this project using:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub Pages
+- Netlify
+- Heroku
+- Cyclic
 
 <!-- AUTHORS -->
 
