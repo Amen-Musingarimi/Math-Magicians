@@ -31,8 +31,8 @@ const Calculator = () => (
     <button type="button" className="gray">
       9
     </button>
-    <button type="button" className="orange">
-      X
+    <button type="button" className="orange multiply">
+      x
     </button>
     <button type="button" className="gray">
       4

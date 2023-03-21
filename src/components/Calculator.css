@@ -16,11 +16,19 @@
   justify-content: center;
 }
 
-.gray {
+.gray,
+.orange {
   cursor: pointer;
   font-size: 2rem;
   border: 1px solid var(--color-gray-dark);
   outline: none;
+}
+
+.multiply {
+  font-size: 1.5rem;
+}
+
+.gray {
   background-color: var(--color-gray);
 }
 
