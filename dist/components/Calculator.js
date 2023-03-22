@@ -43,8 +43,8 @@ var Calculator = function Calculator() {
     className: "gray"
   }, "9"), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
-    className: "orange"
-  }, "X"), /*#__PURE__*/_react.default.createElement("button", {
+    className: "orange multiply"
+  }, "x"), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "gray"
   }, "4"), /*#__PURE__*/_react.default.createElement("button", {
