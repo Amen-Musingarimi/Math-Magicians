@@ -1,0 +1,15 @@
+.homeDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.homeDiv > h2 {
+  font-size: 20px;
+}
+
+.homeDiv > p {
+  font-size: 16px;
+  font-weight: 500;
+}
