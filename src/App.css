@@ -26,3 +26,8 @@ ul {
   font-weight: 600;
   color: black;
 }
+
+.navLinks:hover {
+  color: #00008b;
+  text-decoration: underline;
+}

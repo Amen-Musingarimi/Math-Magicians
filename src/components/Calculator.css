@@ -10,9 +10,8 @@
 
 .calc-container {
   display: flex;
-  justify-content: flex-start;
-  gap: 6rem;
-  padding: 2rem;
+  justify-content: space-between;
+  padding: 2.5rem;
 }
 
 .calc-container > h2 {
