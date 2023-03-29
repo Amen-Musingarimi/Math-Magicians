@@ -8,11 +8,20 @@
   --color-gray-hover: #c0c0c0;
 }
 
+.calc-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+
+.calc-container > h2 {
+  font-size: 20px;
+}
+
 .calculator-grid {
   display: grid;
-  margin-top: 2.5rem;
-  grid-template-columns: repeat(4, 16em);
-  grid-template-rows: minmax(7em, auto) repeat(5, 6em);
+  grid-template-columns: repeat(4, 12em);
+  grid-template-rows: minmax(6em, auto) repeat(5, 5em);
   justify-content: center;
 }
 

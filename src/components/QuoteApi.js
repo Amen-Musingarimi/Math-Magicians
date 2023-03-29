@@ -33,7 +33,7 @@ const Quotes = () => {
   if (isLoading) return <div className="qouteName">Loading...</div>;
 
   return (
-    <div>
+    <div className="quote">
       {quote && (
         <p className="qouteName">
           {quote.quote}
