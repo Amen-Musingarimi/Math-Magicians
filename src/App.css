@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #d3d3d3;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.navLinks {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.navLinks:hover {
+  color: #00008b;
+  text-decoration: underline;
+}

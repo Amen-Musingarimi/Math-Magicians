@@ -1,0 +1,11 @@
+.quote {
+  align-self: center;
+  padding: 250px 60px;
+}
+
+.qouteName {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px;
+}
