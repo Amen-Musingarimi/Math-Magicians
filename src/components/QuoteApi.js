@@ -16,7 +16,7 @@ const Quotes = () => {
           `https://api.api-ninjas.com/v1/quotes?category=${category}`,
           {
             headers: { 'X-Api-Key': apiKey },
-          },
+          }
         );
         const json = await res.json();
         setQuote(json[0]);
@@ -36,9 +36,7 @@ const Quotes = () => {
     <div className="quote">
       {quote && (
         <p className="qouteName">
-          {quote.quote}
-          -
-          {quote.author}
+          {quote.quote}-<span className="author">{quote.author}</span>
         </p>
       )}
     </div>

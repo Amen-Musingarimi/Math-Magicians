@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { FiMenu } from 'react-icons/fi';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
@@ -12,17 +12,9 @@ import './App.css';
 
 const App = () => {
   const dispatch = useDispatch();
-  const isOpen = useSelector((state) => state.nav.isOpen);
-  console.log(isOpen);
-
-  const handleMainContainerClick = () => {
-    if (isOpen) {
-      dispatch(toggleNav());
-    }
-  };
 
   return (
-    <div className="main-container" onClick={handleMainContainerClick}>
+    <div className="main-container">
       <FiMenu className="menu-icon" onClick={() => dispatch(toggleNav())} />
 
       <SideBar />
