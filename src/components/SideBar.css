@@ -1,0 +1,101 @@
+.menu-icon {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  height: 5vh;
+  width: auto;
+  color: #b4c424;
+  z-index: 99;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  color: #7c8623;
+}
+
+.logo-box {
+  width: 100%;
+  margin-top: 25%;
+}
+
+.app-logo {
+  height: auto;
+  width: 100%;
+}
+
+.pages-link > * {
+  margin-bottom: 0.5vh;
+  border-top: #b4c424 solid 0.5px;
+}
+
+.pages-link a {
+  text-decoration: none;
+  color: black;
+  padding: 1.5vh 0%;
+}
+
+.pages-link a:focus-within {
+  background-color: #96be0e;
+}
+
+.active {
+  color: #fff !important;
+  background-color: #b4c424;
+}
+
+.pages-link button {
+  text-align: left;
+  padding: 1.5vh;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.auth-link button,
+.down-btn {
+  border: none;
+  border: 1px solid #b4c424;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-bottom: 0.5vh;
+  width: 100%;
+  padding: 0.6vh 0%;
+}
+
+.pages-link button:active {
+  color: white;
+}
+
+.auth-link {
+  text-decoration: none;
+  color: white;
+}
+
+.social-bottom {
+  height: 7vh;
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+}
+
+.social-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #727070;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    width: 15vw !important;
+    transform: none;
+  }
+
+  .menu-icon {
+    font-size: 16px;
+  }
+}

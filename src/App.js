@@ -1,39 +1,32 @@
-import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
-import Calculator from './components/Calculator';
-import Quotes from './components/QuoteApi';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { FiMenu } from 'react-icons/fi';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/Home';
+import Quotes from './components/QuoteApi';
+import Calculator from './components/Calculator';
+import SideBar from './components/SideBar';
+import { toggleNav } from './redux/sideBarSlice';
 
-function App() {
+import './App.css';
+
+const App = () => {
+  const location = useLocation();
+  const hideNavigation = location.pathname === '/';
+  const dispatch = useDispatch();
+
   return (
-    <>
-      <nav>
-        <h1>Math Magicians</h1>
-        <ul>
-          <li>
-            <Link className="navLinks" to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="navLinks" to="/calculator">
-              Calculator
-            </Link>
-          </li>
-          <li>
-            <Link className="navLinks" to="/quotes">
-              Quotes
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <div className="main-container">
+      <FiMenu className="menu-icon" onClick={() => dispatch(toggleNav())} />
+
+      <SideBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/calculator" element={<Calculator />} />
-        <Route path="/quotes" element={<Quotes />} />
+        <Route path="/" index element={<Home />} />
+        <Route path="/calculator" index element={<Calculator />} />
+        <Route path="/quotes" index element={<Quotes />} />
       </Routes>
-    </>
+    </div>
   );
-}
+};
 
 export default App;
