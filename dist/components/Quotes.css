@@ -1,6 +1,16 @@
+.quote {
+  align-self: center;
+  padding: 250px 60px;
+  font-size: 15px;
+}
+
 .qouteName {
   text-align: center;
-  font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 20px;
+}
+
+.author {
+  color: #585757;
+  font-size: 13px;
 }

@@ -79,9 +79,13 @@ var Quotes = function Quotes() {
   if (isLoading) return /*#__PURE__*/React.createElement("div", {
     className: "qouteName"
   }, "Loading...");
-  return /*#__PURE__*/React.createElement("div", null, quote && /*#__PURE__*/React.createElement("p", {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "quote"
+  }, quote && /*#__PURE__*/React.createElement("p", {
     className: "qouteName"
-  }, quote.quote, "-", quote.author));
+  }, quote.quote, "-", /*#__PURE__*/React.createElement("span", {
+    className: "author"
+  }, quote.author)));
 };
 var _default = Quotes;
 exports.default = _default;
