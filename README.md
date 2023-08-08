@@ -5,6 +5,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -60,6 +61,12 @@
 - **[calculator]**
 - **[quote_api]**
 - **[contact_page]**
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://math-magicians-pi.vercel.app/calculator)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
