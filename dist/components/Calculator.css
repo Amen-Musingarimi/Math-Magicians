@@ -10,10 +10,11 @@
 
 .calculator-grid {
   display: grid;
-  margin-top: 2.5rem;
-  grid-template-columns: repeat(4, 16em);
-  grid-template-rows: minmax(7em, auto) repeat(5, 6em);
+  grid-template-columns: repeat(4, 12em);
+  grid-template-rows: minmax(6em, auto) repeat(5, 5em);
   justify-content: center;
+  height: 100%;
+  padding: 5%;
 }
 
 .gray,
@@ -67,4 +68,14 @@
 
 .current-operant {
   font-size: 2.5rem;
+}
+
+@media (max-width: 759px) {
+  .calculator-grid {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 5%;
+    grid-template-columns: repeat(4, 7em);
+    grid-template-rows: minmax(3em, auto) repeat(5, 5em);
+  }
 }
